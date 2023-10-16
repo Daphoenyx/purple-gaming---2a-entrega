@@ -26,9 +26,11 @@ const ProductCard = ({ item }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" variant="outlined">
-          Ver mas
-        </Button>
+        <Link to={`/itemDetail/${item.id}`}>
+          <Button size="small" variant="outlined">
+            Ver mas
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );
